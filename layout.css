@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    border: 1px solid #69123B;
+    border-radius: 10px;
+}
+
+h1, h2, h3, ul, li, section {
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding 1rem;
+    border-radius: 0 0 10px 10px;
+}
+header {
+    background-color: #69123B;
+    color:whitesmoke;
+    border-radius: 10px 10px 0 0;
+}
+h1 {
+    font-size: 3.2rem;
+    margin-block: 0;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+ul {
+    margin-inline-start: 1rem;
+}
+ul li {}
+section {}
+a {
+    color: #69123B;
+    text-decoration: none;
+    font-style: italic;
+}
+a:hover {
+    background-color: #69123B;
+    color: white;
+    padding: 1rem;
+}
+
+.heading {
+    color: white;
+    background-color: #69123B;
+    font-style: italic;
+    padding: 0rem;
+}
+.heading:hover {
+    color: white;
+    background-color: #69123B;
+    text-decoration: underline;
+    padding: 0;
+
+}
+
+.ohjelmointi {
+    border: 1px solid #69123B;
+
+}
+.ohjelmistokehitaja {}
+.angular {
+    border: 1px solid #69123B;
+    margin-bottom: 0;
+
+}

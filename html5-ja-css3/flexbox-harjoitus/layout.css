@@ -1,0 +1,132 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkcyan;
+    padding: 10px;
+    font-size: 1.4rem;
+    /*fonttikoko 14px tulee käyttöön kaikkiin elementteihin bodyn sisällä*/
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper>* {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.header {
+    background-color: gold;
+}
+
+.wrapper nav {
+    padding: 0;
+
+}
+
+/* Lisätään elementtin ul lapsiin (ul li) flexiä */
+.navbar {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.navbar> * {
+    flex-grow: 1;
+    flex-basis: 0;
+    border-right: 1px solid lightgrey;
+    padding: 1rem;
+}
+
+.main {
+    background-color: darkorange;
+}
+
+/*some-navigointiin flex*/
+.some-parent {
+    padding: 0;
+    margin: 1rem -1rem -1rem -1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.some-parent > * {
+flex-grow: 1;
+flex-basis: 0;
+padding: 1rem;
+text-align: center;
+}
+
+.facebook {
+    background-color: #4B5496;
+    color: white;
+    font-size: 2rem;
+}
+.twitter {
+    background-color: #6DA5EF;
+    color: white;
+    font-size: 2rem;
+}
+.email {
+    background-color: #767676;
+    color: white;
+    font-size: 2rem;
+}
+.aside-1 {
+    background-color: mediumseagreen;
+}
+
+.aside-2 {
+    background-color: seagreen;
+}
+
+.footer {
+    background-color: lightgreen;
+}
+
+/* Tablet -näkymän säännöt */
+@media only screen and (min-width: 426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .aside-1 {
+        flex-basis: auto;
+    }
+
+    .aside-2 {
+        flex-basis: auto;
+    }
+}
+
+/* Desktop-näkymän säännöt */
+@media only screen and (min-width: 769px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+
+    .footer {
+        order: 4;
+    }
+}

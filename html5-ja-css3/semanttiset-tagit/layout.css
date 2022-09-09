@@ -1,0 +1,50 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    padding: 1rem;
+    color: white;
+}
+header{
+    background-color: #DF1428;
+}
+nav{
+    background-color: #F38F2D;
+}
+/* Kikkaillaan aside- ja section elementti yhtä korkeaksi*/
+.container {
+overflow: hidden;
+}
+.column{
+padding-bottom: 1000px;
+margin-bottom: -1000px;
+}
+section{
+    background-color: #FFC000;
+    float: left;
+    width: 50%;
+    box-sizing: border-box; /* elementin leveydessä mukana myös padding ja margin ---> 50% ei mene rikki */
+
+}
+section article{
+    background-color: #7AC141;
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+}
+aside {
+    background-color: #026FB4;
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 10.2rem;
+}
+footer{
+    background-color: #932B8E;
+    clear: both;
+}
