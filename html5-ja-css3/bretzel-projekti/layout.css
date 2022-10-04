@@ -1,0 +1,195 @@
+body{
+    font-size: 62.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: normal;
+}
+
+.container {
+    max-width: 100%;
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url(./images/grunge.png);
+    padding: 0 15px 0 15px;
+}
+.discount {
+    background-color: #5E8288;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-image: url(./images/special-bg.png);
+    background-image: url(./images/special-bg.png);
+    background-repeat: repeat-x;
+    background-position: 80% 100%;
+
+}
+
+header {
+    border-bottom: 1px solid #C9C3BD;
+    margin-bottom: 0.5rem;
+}
+nav {
+    gap: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
+}
+
+nav ul {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav a {
+   
+    font-size: 1.5rem;
+    color: grey;
+    flex-grow: 1;
+}
+nav img {
+    margin: 0.5rem;
+}
+/* MAIN */
+
+main {
+gap: 2rem;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.columnleft {
+    width: 58%;
+    font-size: 1.2rem;
+    color: grey;
+    box-sizing: border-box;
+}
+
+.columnleft img {
+    width: 90%;
+    margin: 0.5rem;
+}
+
+/* ASIDE */
+aside {
+    width: 38%;
+    font-size: 1.2rem;
+
+}
+.wtp {
+    background-color: #F9E6C4;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.wtp h2 {
+    text-transform: uppercase;
+}
+
+article {
+    margin: 1rem 0;
+}
+
+article h3 {
+    font-size: 1.4rem;
+    color: grey;
+    text-transform: uppercase;
+
+}
+
+article ul {
+    column-count: 2;
+    margin-right: 1rem;
+    padding: 1rem 0;
+}
+
+.saltpep{
+    color: grey;
+    font-size: 1.2rem;
+
+}
+
+.saltpep h3 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: grey;
+}
+
+/* FOOTER */
+
+footer {
+   text-align: center;
+    margin: 1rem;
+}
+footer p {
+    font-size: 1rem;
+    color: lightgrey;
+    text-transform: uppercase;
+}
+footer img {
+max-width: 10%;
+filter: opacity(70%);
+}
+
+/* Media queries */
+/* Mobile screen */
+@media only screen and (max-width: 425px) {
+    nav {
+        display: block;
+    
+    }
+    header a {
+        text-align: center;
+        display: block;
+       
+    }
+    nav ul {
+        gap: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+/* Tablet screen */
+@media only screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+        }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;    
+    }
+
+    .columnleft
+    {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    article {
+        margin: 2rem;
+    }
+
+    .saltpep {
+        margin: 1rem;
+    }
+}
+
