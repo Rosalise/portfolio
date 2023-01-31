@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+body {
+    font-size: 62.5%;
+    font-family: 'EB Garamond';
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.settings {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 12;
+    background: #fff8f8;
+}
+.sethead {
+    font-size: 15rem;
+    padding-bottom: 1rem;
+}
+
+.settext {
+    font-size: 6rem;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+}
+
+.setitem {
+    border: 1px solid #ccc;
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 5rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+;
+}
+.active {
+    border: none;
+    background-color: purple;
+    color: white;
+}
+
+.setitem::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    z-index: -1;
+    transition: transform 175ms ease-in;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.setitem:hover::after  {
+    transform: scaleX(1);
+}
+
+.btn {
+    padding: 3rem;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #80007c87;
+    border: 5px ridge rgb(204, 204, 204);
+    font-family: 'EB Garamond';
+    font-size: 5rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: flex-end;
+    }
+.btn:hover{
+    background-color: purple;
+    color: white;
+    box-shadow: 40px 40px 40px #454343
+}
+ /* Teokset ja niiden kansiot*/
+.covers {
+    grid-column: 5 / span 8;
+    grid-row: 1 / span 8;
+    background: #f9f9f9;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    overflow: hidden;
+}
+.covershead {
+    font-size: 15rem;
+    font-family:'Island Moments';
+}
+
+.bookcovers {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 900px;
+    width: auto;
+    object-fit: cover;
+}
+.painting {
+    margin: 0 5em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+.bookinfo {
+    grid-column: 5 / span 8;
+    grid-row: 9 / span 4;
+    background: #ececec;
+    font-family: 'Island Moments';
+    font-size: 10rem;
+    padding-bottom: 5%;
+}
+
+.infohead {
+    font-size: 15rem;
+}
+
+.year {
+    color: #787676;
+    opacity: .5;
+    position: relative;
+    font-size: 10rem;
+    text-align: center;
+}
+.content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentH2 {
+    font-size: 9rem;
+    color: rgba(43, 40, 45, 0.93);
+    }
+
+.contentH5 {
+    padding-top: .5rem;
+    font-size: 9rem;
+    color: black;
+    }
+
+.arrowstext {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.circle__wrapper {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle, .circlereverse {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    transition: all 175ms ease;
+}
+
+.circle:hover, .circlereverse:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    transform: scale(1.1);
+}
+.circle__icon {
+        color: white;
+        font-size: 24px;
+    }
+
+.circlereverse:last-child {
+        transform: rotate(180deg);
+    }
+
+
+
+    /* { @media all and (max-width: 1200px)
+
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.year {
+    @media all and (max-width: 1200px) {
+        margin-top: -32vh;
+    }
+}
+.content {
+    @media all and (max-width: 1200px) {
+        padding: 1em 4em;
+    }
+}
+
+.bookinfo {
+    @media all and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.art {
+    @media all and (max-width: 1200px) {
+        min-height: 500px;
+}
+}
+.img {
+    @media all and (max-width: 1200px) {
+    max-height: 300px;
+    max-width: 300px;
+}
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaihda fonttia JavaScriptin avulla</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Muuta fonttityyppiä Javascriptillä</h1>
+        <article>
+            <p>Huom! Kaikki muutokset tapahtuvat JavaScriptin avulla</p>
+            <p>Listan fonttityyppiä vaihdetaan alla olevaa painonappia painamalla. Listan oletusfontti on "Georgia", fonttikoko on 16px.</p>
+        </article>
+        <h2>Tämän listan fonttityyppi muuttuu napista painamalla</h2>
+        <ol>
+            <li>Ensimmäinen napin painallus muuttaa fonttityypiksi "Roboto"</li>
+            <li>Toinen napin painallus muuttaa fonttityypiksi "Mansalva"</li>
+            <li>Kolmas napin painallus muuttaa fonttityypiksi "Grenze"</li>
+            <li>Neljäs napin painallus muuttaa fonttityypiksi "Turret Road"</li>
+            <li>Viides napin painallus muuttaa fonttityypiksi "Georgia"</li>
+        </ol>
+    <button id="btn" class="button" type="button" onclick="changeFamily()" >Muuta fontti</button>
+    <p class="current" id="current">Fontti on nyt: Georgia</p>   
+    </section>
+    <script src="./js/fonttifamily.js"></script>
+</body>
+</html>

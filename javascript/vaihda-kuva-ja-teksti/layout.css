@@ -1,0 +1,38 @@
+body {
+    font-size: 62.5%;
+    font-family: cursive;
+}
+
+.container {
+    margin: 10rem auto;
+    padding: 0;
+    max-width: 60%;
+    position: relative;
+}
+
+.text {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.7rem;
+    position: absolute;
+    font-weight: 500;
+    color: #6f483f;
+    padding: 0.5rem;
+}
+
+.image
+{
+    width: 50%;
+    border: 55px solid #eeeeeec8;
+}
+
+.btn {
+    background-color: #915C4C;
+    border: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 1.4rem;
+    font-family: cursive;
+    width: 60%;
+    }

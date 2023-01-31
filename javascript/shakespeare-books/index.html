@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare books</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+    <section class="container">
+      <main class="main">
+        <section class="settings">
+            <h1 class="sethead">Asetukset</h1>
+            <p class="settext">Valitse tyylilaji ja katso millaiset näytelmät sopivat Teille. Voitte valita teoksen favourite:ksi.</p>
+            <ul class="setlist">
+                <li class="setitem active">Historiallinen näytelmä</li>
+                <li class="setitem">Tragedia</li>
+                <li class="setitem">Komedia</li>
+                <li class="setitem">Sonetti</li>
+            </ul>
+            <button class="btn">Löydä</button>
+        </section>
+<!-- Slider upper part. Should work with the bottom info part -->
+        <section class="covers">
+            <h1 class="covershead">Teokset</h1>
+            <section class="bookcovers">
+                <figure class="painting" data-id="1">
+                    <img src="./images/henryV.jpeg">
+                </figure>
+                <figure class="painting" data-id="2">
+                    <img src="images/hamlet.jpeg">
+                </figure>
+                <figure class="painting" data-id="3">
+                    <img src="./images/macbeth.jpeg">
+                </figure>
+                <figure class="painting" data-id="4">
+                    <img src="./images/asyoulikeit.jpeg">
+                </figure>
+                <figure class="painting" data-id="5">
+                    <img src="./images/twelfthnight.jpeg">
+                </figure>
+            </section>
+        </section>
+        <!--bottom info part should work alongside with the upper part with book covers  -->
+        <section class="bookinfo">
+            <h1 class="infohead">Tietoja</h1>
+                <p class="year">1599</p>
+            <section class="arrowstext">
+                <section class="circle__wrapper">
+                    <figure class="circle">
+                        <ion-icon name="arrow-back" id="arrowback"></ion-icon>
+                    </figure>
+                </section>
+                <article class="content">
+                    <h2 class="contentH2">William Shakespeare</h2>
+                    <h5 class="contentH5">Henry V</h5>
+                </article>
+                <section class="circle__wrapper">
+                    <figure class="circlereverse">
+                        <ion-icon name="arrow-back" id="arrow"></ion-icon>
+                    </figure>
+                </section>
+            </section>
+            </section>
+        </section>
+      </main>
+    </section>
+
+    <script src="./main.js"></script>  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>

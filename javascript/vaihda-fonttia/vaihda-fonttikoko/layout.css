@@ -1,0 +1,41 @@
+body {
+    font-size: 62.5%;
+    font-family: fantasy;
+    line-height: 2;
+}
+
+.container {
+    width: 768px;
+    background-color: rgba(226, 204, 185, 0.786);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+article {
+    font-size: 1.4rem;
+}
+ol {
+    padding: 0 1rem 1rem 1rem;
+    list-style: decimal;
+}
+
+button {
+    background-color: rgba(178, 99, 70, 0.874);
+    color: rgba(226, 204, 185, 0.786);
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border-color: rgb(113, 20, 20);
+    padding: 0.5rem;
+}
+
+.current {
+    text-align: right;
+    font-size: 16px;
+}

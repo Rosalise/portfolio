@@ -1,0 +1,13 @@
+ body {
+    font-size: 62.5%;
+ }
+
+
+ h1 {
+    font-size: 1.4rem;
+ }
+ ul {
+    font-size: 1rem;
+    list-style: circle;
+    padding-left: 1rem;
+ }
